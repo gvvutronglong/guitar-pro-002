@@ -1,0 +1,16 @@
+<div id="alphaTab">
+   \title "Hello alphaTab"
+   .
+   :4 0.6 1.6 3.6 0.5 2.5 3.5 0.4 2.4 |
+      3.4 0.3 2.3 0.2 1.2 3.2 0.1 1.1 |
+      3.1.1
+</div>
+<script type="module">
+     // here we use JsDelivr as source (notice the .mjs extension which indicates the module variant)
+     import * as alphaTab from 'https://cdn.jsdelivr.net/npm/@coderline/alphatab@latest/dist/alphaTab.min.mjs'
+     // initialize alphaTab on the prepared element
+     const element = document.getElementById('alphaTab');
+     const api = new alphaTab.AlphaTabApi(element, {
+      tex: true
+     });
+ </script>
